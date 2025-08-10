@@ -1,0 +1,197 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: black;
+  color: gold;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e60000; /* bright red hover */
+}
+
+/* Hero */
+#hero {
+  background: #e60000; /* bold red */
+  color: gold;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero-inner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-inner p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+#hero button {
+  background: gold;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+#hero button:hover {
+  background: #ccac00;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 1rem;
+  color: black;
+  background: #fff;
+}
+
+.section:nth-child(even) {
+  background: #f9f2e7; /* subtle light gold-ish */
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #e60000;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.section p,
+.section ul {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.section ul li {
+  margin-bottom: 0.8rem;
+}
+
+/* Contact form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.75rem;
+  border: 2px solid #e60000;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: gold;
+  background: #fff8dc;
+}
+
+button[type="submit"] {
+  background: #e60000;
+  color: gold;
+  font-weight: 700;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #b50000;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: gold;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  #hero {
+    padding: 3rem 1rem;
+  }
+}

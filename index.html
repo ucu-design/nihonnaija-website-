@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nigerian–Japanese Digital Marketing | Bridging Cultures with Smart Solutions</title>
+  <meta name="description" content="Explore innovative digital marketing strategies blending Nigerian and Japanese cultures. Discover AI tools, automation, and creative campaigns tailored for businesses looking to grow globally." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container hero-inner">
+      <h1>Nigerian–Japanese Digital Marketing</h1>
+      <p>Bridging cultures with smart solutions to grow your business globally.</p>
+      <button id="getStartedBtn">Get Started</button>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>We specialize in blending Nigerian and Japanese digital marketing strategies, delivering innovative and automated solutions to help your business thrive across borders.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <ul>
+          <li>AI-powered marketing automation</li>
+          <li>Cross-cultural digital campaigns</li>
+          <li>Social media management & growth</li>
+          <li>Content creation with Nigerian & Japanese flair</li>
+          <li>SEO & analytics tailored to your audience</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <p>Check back soon for case studies and examples showcasing our successful campaigns bridging Nigerian and Japanese markets.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name</label><br />
+          <input type="text" id="name" name="name" placeholder="Your name" required /><br />
+
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" placeholder="Your email" required /><br />
+
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea><br />
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Nigerian–Japanese Digital Marketing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for navigation links and Get Started button
+    document.querySelectorAll('nav a, #getStartedBtn').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href') || '#contact';
+        document.querySelector(targetId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
